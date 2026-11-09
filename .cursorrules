@@ -1,0 +1,4 @@
+- Código em Python 3.12+ utilizando boas práticas de tipagem e docstrings.
+- Testes seguindo o padrão AAA (Arrange, Act, Assert).
+- Seletores nos testes E2E devem ser semânticos (get_by_role, get_by_label, get_by_text).
+- Garantir conformidade com os requisitos WCAG 2.1 AA na interface HTML.

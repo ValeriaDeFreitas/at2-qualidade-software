@@ -1,0 +1,8 @@
+pytest
+pytest-mock
+pytest-playwright
+playwright
+axe-playwright-python
+faker
+fastapi
+uvicorn

@@ -1,0 +1,35 @@
+[project]
+name = "classificador-livros"
+version = "0.1.0"
+description = "Classificador de livros por gênero baseado em sinopses"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "axe-core-python>=0.1.0",
+    "axe-playwright-python>=0.1.8",
+    "faker>=40.44.0",
+    "fastapi>=0.162.2",
+    "httpx2>=2.14.0",
+    "locust>=2.46.0",
+    "pandas>=2.0.0",
+    "playwright>=1.64.1",
+    "pytest-playwright>=0.10.0",
+    "scikit-learn>=1.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v --cov=src --cov-branch --cov-report=term-missing"
+pythonpath = ["."]
+markers = [
+    "unit: marca testes unitários",
+    "integration: marca testes de integração",
+    "e2e: marca testes end-to-end com Playwright",
+    "accessibility: marca testes de acessibilidade (WCAG 2.1 AA)",
+]
